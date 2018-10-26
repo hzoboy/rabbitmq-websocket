@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>WebSocket</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<div id="main"></div>
+</body>
+<script src="./js/jquery.js"></script>
+<script type="text/javascript">
+    var maxClient = 100;
+    var html = "";
+    for (var i = 0; i < maxClient; i++) {
+        html += "client"+i+":<iframe align='center' width='100%' height='170' src='inner.html'  frameborder='no' border='0' marginwidth='0' marginheight='0' scrolling='no'></iframe>";
+    }
+    $("#main").html(html);
+</script>
+</html>
